@@ -34,9 +34,9 @@ Ngược dòng lịch sử, Machine Learning đã xuất hiện từ rất lâu 
 
 ![](http://khanhxnguyen.com/wp-content/uploads/2015/08/Classification1.png)
 
-Sơ lược quy trình phân loại thư được mô tả sau. Trước hết, ta cần một thuật toán để chuyển email thành những điểm dữ liệu. Công đoạn này rất rất quan trọng vì nếu chúng ta chọn được biểu diễn phù hợp, công việc của Perceptron sẽ nhẹ nhàng hơn rất nhiều. Tiếp theo, Perceptron sẽ đọc tọa độ của từng điểm và sử dụng thông tin này để cập nhật tham số của đường thẳng cần tìm. Các bạn có thể xem demo của Perceptron tại [đây](https://www.youtube.com/watch?v=vGwemZhPlsA) (điểm xanh lá cây là điểm Perceptron đang xử lý):
+Sơ lược quy trình phân loại thư được mô tả sau. Trước hết, ta cần một thuật toán để chuyển email thành những điểm dữ liệu. Công đoạn này rất rất quan trọng vì nếu chúng ta chọn được biểu diễn phù hợp, công việc của Perceptron sẽ nhẹ nhàng hơn rất nhiều. Tiếp theo, Perceptron sẽ đọc tọa độ của từng điểm và sử dụng thông tin này để cập nhật tham số của đường thẳng cần tìm. Các bạn có thể xem demo của Perceptron tại [đây]() (điểm xanh lá cây là điểm Perceptron đang xử lý):
 
-<iframe class='youtube-player' type='text/html' width='640' height='390' src='http://www.youtube.com/embed/m4J2WLOvrHg?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/vGwemZhPlsA/0.jpg)](https://www.youtube.com/watch?v=vGwemZhPlsA "Video Title")
 
 Những điểm tam giác và vuông đại diện cho những email chúng ta đã biết nhãn trước. Chúng được dùng để "huấn luyện" (train) Perceptron. Sau khi vẽ đường thẳng chia hai tập điểm, ta nhận thêm các điểm chưa được dán nhãn, đại diện cho các email cần được phân loại (điểm tròn). Ta dán nhãn của một điểm theo nhãn của các điểm cùng nửa mặt phẳng với điểm đó. Vì là một thuật toán khá đơn giản, có rất nhiều vấn đề có thể nảy sinh với Perceptron, ví dụ như điểm cần phân loại nằm ngay trên đường thẳng phân chia. Hoặc tệ hơn là với một tập dữ liệu phức tạp hơn, đường thẳng phân chia không tồn tại:
 
@@ -44,8 +44,7 @@ Clasification (hard)Lúc này, ta cần các loại đường phân chia "không
 
 Perceptron là một thuật toán "học có hướng dẫn" (supervised learning): ta đưa cho máy tính hàng loạt các ví dụ cùng câu trả lời mẫu với hy vọng máy tính sẽ tìm được những đặc điểm cần thiết để đưa ra dự đoán cho những ví dụ khác chưa có câu trả lời trong tương lai. Ngoài ra, cũng có những thuật toán Machine Learning "không cần hướng dẫn" (unsupervised learning): máy tính cố gắng khai thác ra cấu trúc ẩn của một tập dữ liệu mà không cần câu trả lời mẫu. Một loại Machine Learning khác được gọi là "học củng cố" (reinforcement learning). Trong dạng này, cũng không hề có câu trả lời mẫu, nhưng thay vì đó máy tính nhận được phản hồi cho mỗi hành động. Dựa vào phản hồi tích cực hay tiêu cực mà máy tính sẽ điều chỉnh hoạt động cho phù hợp. Sau đây là một ví dụ minh họa:
 
- 
-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/m4J2WLOvrHg/0.jpg)](https://www.youtube.com/watch?v=m4J2WLOvrHg)
  
 Mục tiêu của chiếc xe là leo lên được đỉnh đồi và lấy được ngôi sao. Chiếc xe có hai chuyển động tới và lui. Bằng cách thử các chuyển động và nhận được phản hồi là độ cao đạt được và thời gian để lấy được ngôi sao, chiếc xe dần trở nên thuần thục hơn trong việc leo đồi lấy sao.
 
