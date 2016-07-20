@@ -34,9 +34,9 @@ Ngược dòng lịch sử, Machine Learning đã xuất hiện từ rất lâu 
 
 ![](http://khanhxnguyen.com/wp-content/uploads/2015/08/Classification1.png)
 
-Classification(1)Sơ lược quy trình phân loại thư được mô tả sau. Trước hết, ta cần một thuật toán để chuyển email thành những điểm dữ liệu. Công đoạn này rất rất quan trọng vì nếu chúng ta chọn được biểu diễn phù hợp, công việc của Perceptron sẽ nhẹ nhàng hơn rất nhiều. Tiếp theo, Perceptron sẽ đọc tọa độ của từng điểm và sử dụng thông tin này để cập nhật tham số của đường thẳng cần tìm. Các bạn có thể xem demo của Perceptron tại đây (điểm xanh lá cây là điểm Perceptron đang xử lý):
+Sơ lược quy trình phân loại thư được mô tả sau. Trước hết, ta cần một thuật toán để chuyển email thành những điểm dữ liệu. Công đoạn này rất rất quan trọng vì nếu chúng ta chọn được biểu diễn phù hợp, công việc của Perceptron sẽ nhẹ nhàng hơn rất nhiều. Tiếp theo, Perceptron sẽ đọc tọa độ của từng điểm và sử dụng thông tin này để cập nhật tham số của đường thẳng cần tìm. Các bạn có thể xem demo của Perceptron tại đây (điểm xanh lá cây là điểm Perceptron đang xử lý):
 
- 
+[](https://www.youtube.com/watch?v=vGwemZhPlsA) 
 
  
 Những điểm tam giác và vuông đại diện cho những email chúng ta đã biết nhãn trước. Chúng được dùng để "huấn luyện" (train) Perceptron. Sau khi vẽ đường thẳng chia hai tập điểm, ta nhận thêm các điểm chưa được dán nhãn, đại diện cho các email cần được phân loại (điểm tròn). Ta dán nhãn của một điểm theo nhãn của các điểm cùng nửa mặt phẳng với điểm đó. Vì là một thuật toán khá đơn giản, có rất nhiều vấn đề có thể nảy sinh với Perceptron, ví dụ như điểm cần phân loại nằm ngay trên đường thẳng phân chia. Hoặc tệ hơn là với một tập dữ liệu phức tạp hơn, đường thẳng phân chia không tồn tại:
